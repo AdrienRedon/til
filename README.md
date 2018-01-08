@@ -16,3 +16,50 @@ https://codepen.io/rachelandrew/pen/KZyaBj
 
 #### Learned from:
 [Rachel Andrew](https://twitter.com/rachelandrew)
+
+## 08/01/2018
+
+### Angular: trackBy
+
+```trackBy``` modifies the behavior so that it compares new data to old based on the return value of the supplied trackBy method.
+This allows Angular to reduce the amount of DOM update needed.
+
+#### How to use
+```html
+<!-- instructor-list.component.html.html -->
+<ul>
+  <li *ngFor="let instructor of instructorList: trackBy: trackByName" >
+    <span>Instructor Name {{ instructor.name }}</span>
+  </li>
+</ul>
+```
+```typescript
+/* instructor-list.component.ts */
+import { Component } from '@angular/core';
+
+import { ListService } from '../list.service';
+
+@Component({
+  selector: 'app-instructor-list',
+  templateUrl: './instructor-list.component.html'
+})
+export class InstructorListComponent {
+  instructorList = {name: string}[];
+
+  constructor(private ls: ListService){
+    // In this example let's assume the list service provides the
+    // instructors as a realtime list of filtered instructors.
+    // New updates are sent at regular intervals regardless of content change.
+    // As a result the object references change with each update.
+    ls.getList()
+      .subscribe(list => this.instructorList = list);
+  } 
+  
+  trackByName(index, instructor) {
+    return instructor.name;
+  }
+}
+
+```
+#### Learned from:
+[Angular Blog](https://blog.angular.io/3-tips-for-angular-runtime-performance-from-the-real-world-d467fbc8f66e)
