@@ -108,4 +108,4 @@ You can provide a second argument to `Array.from` that is a `map` function.
 Array.from(Array(20), (item, index) => index + 1);
 ```
 #### Learned from:
-[Merrick Christensen](https://twitter.com/iammerrick)
+[Merrick Christensen](https://twitter.com/iammerrick/status/950841613651193858)
