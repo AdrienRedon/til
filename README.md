@@ -64,6 +64,39 @@ export class InstructorListComponent {
 #### Learned from:
 [Angular Blog](https://blog.angular.io/3-tips-for-angular-runtime-performance-from-the-real-world-d467fbc8f66e)
 
+## 09/01/2018
+
+### Vue: render single slot component
+
+ You can use render functions instead of templates for single slot components to avoid the extra wrapper element
+ 
+#### How to use
+```javascript
+Vue.component('element-query', {
+  // use a render function to grab the slot directly!
+  render() {
+    return this.$scopedSlots.default({
+      width: this.width,
+      height: this.height,
+    })
+  },
+  data() {
+    return {
+      width: null,
+      height: null,
+    }
+  },
+  mounted(){
+    erd.listenTo(this.$el, (el) => {
+      this.width = el.offsetWidth;
+      this.height = el.offsetHeight;
+    })
+  },
+})
+```
+#### Learned from:
+[Adam Wathan](https://twitter.com/adamwathan/status/950782785467199489)
+
 ## 10/01/2018
 
 ### ES6: Array.from map function
