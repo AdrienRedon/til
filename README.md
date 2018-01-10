@@ -63,3 +63,16 @@ export class InstructorListComponent {
 ```
 #### Learned from:
 [Angular Blog](https://blog.angular.io/3-tips-for-angular-runtime-performance-from-the-real-world-d467fbc8f66e)
+
+## 10/01/2018
+
+### ES6: Array.from map function
+
+You can provide a second argument to `Array.from` that is a `map` function.
+
+#### How to use
+```javascript
+Array.from(Array(20), (item, index) => index + 1);
+```
+#### Learned from:
+[Merrick Christensen](https://twitter.com/iammerrick)
