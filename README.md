@@ -15,7 +15,7 @@ grid-template-columns: fit-content(250px) 1fr;
 https://codepen.io/rachelandrew/pen/KZyaBj
 
 #### Learned from:
-[Rachel Andrew](https://twitter.com/rachelandrew)
+[Rachel Andrew](https://twitter.com/rachelandrew/status/950021988453634048)
 
 ## 08/01/2018
 
