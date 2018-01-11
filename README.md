@@ -109,3 +109,22 @@ Array.from(Array(20), (item, index) => index + 1);
 ```
 #### Learned from:
 [Merrick Christensen](https://twitter.com/iammerrick/status/950841613651193858)
+
+## 11/01/2018
+
+### Jasmine: mockDate
+
+It is possible to mock the current date with the ```mockDate``` function of Jasmine.
+
+#### How to use
+```javascript
+// with native Date
+const today = new Date('2015-10-19');
+jasmine.clock().mockDate(today);
+
+// with moment.js
+const today = moment('2015-10-19').toDate();
+jasmine.clock().mockDate(today);
+```
+#### Learmed from:
+[jacwah](https://stackoverflow.com/a/33380312)
