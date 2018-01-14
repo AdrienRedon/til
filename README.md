@@ -128,3 +128,12 @@ jasmine.clock().mockDate(today);
 ```
 #### Learmed from:
 [jacwah](https://stackoverflow.com/a/33380312)
+
+## 13/01/2018
+
+### DevTools: coverage
+
+Press [ctrl] + [shift] + p or [cmd] + [shift] + p then type code "show coverage". You can then reload the page to see how much code is being unused on the page.
+
+#### Learned from:
+[Sean Larkin](https://twitter.com/TheLarkInn/status/952272042786570240)
