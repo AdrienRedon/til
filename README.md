@@ -137,3 +137,16 @@ Press [ctrl] + [shift] + p or [cmd] + [shift] + p then type code "show coverage"
 
 #### Learned from:
 [Sean Larkin](https://twitter.com/TheLarkInn/status/952272042786570240)
+
+## 15/01/2018
+
+### ES6: unique array
+
+It is possible to get unique values from an array with Set() and the rest operator.
+
+#### How to use
+```javascript
+const uniqueArray = (arr) => [...new Set(arr)];
+```
+#### Learned from:
+[Addy Osmani](https://twitter.com/addyosmani/status/952805052086824960)
