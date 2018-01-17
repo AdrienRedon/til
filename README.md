@@ -150,3 +150,14 @@ const uniqueArray = (arr) => [...new Set(arr)];
 ```
 #### Learned from:
 [Addy Osmani](https://twitter.com/addyosmani/status/952805052086824960)
+
+### Command Line: curly brackets
+
+Use curly brackets in the command line to cut down on typing the same thing over and over
+
+#### How tu use
+```shell
+touch component.{ts,css,html}
+```
+#### Learned from:
+[Wes Bos](https://twitter.com/wesbos/status/952984066093182976)
