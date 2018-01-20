@@ -161,3 +161,26 @@ touch component.{ts,css,html}
 ```
 #### Learned from:
 [Wes Bos](https://twitter.com/wesbos/status/952984066093182976)
+
+## 20/01/2018
+
+### Angular: Pure pipe
+
+With Pure pipe, we can optimize expression re-evaluation and get the caching that Angular provides.
+
+#### How to use
+
+```javascript
+@Pipe({
+  name: 'purePipe',
+  pure: true,
+})
+export class PurePipe {
+  transform(input: string, param: string) {
+    return input + param;
+  }
+}
+```
+
+#### Learned from:
+[Minko Gechev](http://blog.mgechev.com/2017/11/12/faster-angular-applications-pure-pipes-memoization-pure-functions-part-2/)
