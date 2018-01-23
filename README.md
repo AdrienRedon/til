@@ -226,3 +226,14 @@ It is possible to have a DOM element keep a fixed aspect ratio with a combinatio
 https://codepen.io/noamr/pen/mpamVN
 #### Learned from:
 [Noam Rosenthal](https://codeburst.io/keeping-aspect-ratio-with-html-and-no-padding-tricks-40705656808b)
+
+### HTML: preconnect
+
+We can add preconnect hints for any hosts that you will be requesting assets from so the browser can then prep things by establishing all the necessary connections for those resources.
+
+#### How to use
+```html
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+```
+#### Learned from:
+[Jeremy Frank](https://www.viget.com/articles/make-your-site-faster-with-preconnect-hints/)
