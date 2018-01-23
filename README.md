@@ -198,3 +198,31 @@ The mix-blend-mode CSS property describes how an element's content should blend 
 ```
 #### Learned from:
 [Timothy Achumba](https://twitter.com/timothyachumba/status/955364205313568768)
+
+## 23/01/2018
+
+### CSS: Aspect Ratio
+
+It is possible to have a DOM element keep a fixed aspect ratio with a combination of CSS grid and SVG.
+
+#### How to use
+```html
+<style>
+.aspectRatioSizer {
+  display: grid;
+}
+.aspectRatioSizer > * {
+  grid-area: 1 / 1 / 2 / 2;
+}
+</style>
+<div class="aspectRatioSizer">
+  <svg viewBox="0 0 7 2"></svg>
+  <div>
+    Content goes here
+  </div>
+</div>
+```
+#### codepen:
+https://codepen.io/noamr/pen/mpamVN
+#### Learned from:
+[Noam Rosenthal](https://codeburst.io/keeping-aspect-ratio-with-html-and-no-padding-tricks-40705656808b)
