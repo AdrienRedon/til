@@ -169,7 +169,6 @@ touch component.{ts,css,html}
 With Pure pipe, we can optimize expression re-evaluation and get the caching that Angular provides.
 
 #### How to use
-
 ```javascript
 @Pipe({
   name: 'purePipe',
@@ -181,6 +180,21 @@ export class PurePipe {
   }
 }
 ```
-
 #### Learned from:
 [Minko Gechev](http://blog.mgechev.com/2017/11/12/faster-angular-applications-pure-pipes-memoization-pure-functions-part-2/)
+
+## 22/01/2018
+
+### CSS: mix-blend-mode
+
+The mix-blend-mode CSS property describes how an element's content should blend with the content of the element's direct parent and the element's background. For instance we can set a text to white and the mix-blend-mode property to difference. That would result in the text being always readable no matter the background.
+
+#### How to use
+```css
+.readable-text {
+  color: white;
+  mix-blend-mode: difference;
+}
+```
+#### Learned from:
+[Timothy Achumba](https://twitter.com/timothyachumba/status/955364205313568768)
