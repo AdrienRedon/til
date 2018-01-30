@@ -237,3 +237,16 @@ We can add preconnect hints for any hosts that you will be requesting assets fro
 ```
 #### Learned from:
 [Jeremy Frank](https://www.viget.com/articles/make-your-site-faster-with-preconnect-hints/)
+
+## 30/01/2018
+
+### npm: use specific version of node for project
+
+You can use a specific version of node so any time you do `npm test` or `npm start`, it will use this one, regardless of what your global node version is.
+
+#### How to use
+```shell
+$ npm install node@7
+```
+#### Learned from:
+[Kat Marchán](https://twitter.com/maybekatz/status/958157474397171712)
