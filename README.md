@@ -157,7 +157,7 @@ Use curly brackets in the command line to cut down on typing the same thing over
 
 #### How tu use
 ```shell
-touch component.{ts,css,html}
+$ touch component.{ts,css,html}
 ```
 #### Learned from:
 [Wes Bos](https://twitter.com/wesbos/status/952984066093182976)
