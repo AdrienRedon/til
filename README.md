@@ -250,3 +250,21 @@ $ npm install node@7
 ```
 #### Learned from:
 [Kat Marchán](https://twitter.com/maybekatz/status/958157474397171712)
+
+## 06/02/2018
+
+### ES6: tagged template strings
+
+You can use tagged template strings to get many editors to syntax-highlight the strings
+
+#### How to use
+```javascript
+const html = String.raw;
+const wired = html`
+  <div class="wow">
+    html, yay
+  </div>
+`;
+```
+#### Learned from:
+[Alex Dytrych](https://twitter.com/SomeHats/status/960138211350728704)
