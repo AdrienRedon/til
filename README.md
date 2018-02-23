@@ -268,3 +268,19 @@ const wired = html`
 ```
 #### Learned from:
 [Alex Dytrych](https://twitter.com/SomeHats/status/960138211350728704)
+
+## 22/02/2018
+
+### JS: Locale Curency
+
+You can use toLocaleString to format currency
+
+#### How to use
+```javascript
+100.42.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' });
+// "100,42 €"
+100.42.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+// "$100.42"
+```
+#### Learned from:
+[Wes Bos](https://twitter.com/wesbos/status/966697179904651264)
