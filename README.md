@@ -284,3 +284,18 @@ You can use toLocaleString to format currency
 ```
 #### Learned from:
 [Wes Bos](https://twitter.com/wesbos/status/966697179904651264)
+
+## 27/02/208
+
+### git: changelog
+
+You can use git log to generate a changelog since a given tag.
+
+#### How to use
+```shell
+$ git log --oneline --no-merges [last tag]..
+
+$ git log --oneline --no-merges v1.10.0..
+```
+#### Learned from:
+[Harry Roberts](https://twitter.com/csswizardry/status/865919323528990720)
