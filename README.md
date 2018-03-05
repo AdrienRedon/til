@@ -299,3 +299,22 @@ $ git log --oneline --no-merges v1.10.0..
 ```
 #### Learned from:
 [Harry Roberts](https://twitter.com/csswizardry/status/865919323528990720)
+
+## 05/03/2018
+
+### CSS: content-based sizing
+
+You can make your layout fast and static by default by turning on content-based sizing on a per-element basis.
+
+#### How to use
+```css
+* {
+  box-sizing: border-box;
+  contain: strict;
+}
+[autosize] {
+  contain: layout style paint;
+}
+```
+#### Learned from/
+[Jason Miller](https://twitter.com/_developit/status/970425737512673280)
