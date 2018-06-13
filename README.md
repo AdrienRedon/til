@@ -316,5 +316,5 @@ You can make your layout fast and static by default by turning on content-based 
   contain: layout style paint;
 }
 ```
-#### Learned from/
+#### Learned from:
 [Jason Miller](https://twitter.com/_developit/status/970425737512673280)
