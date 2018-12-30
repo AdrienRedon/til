@@ -318,3 +318,16 @@ You can make your layout fast and static by default by turning on content-based 
 ```
 #### Learned from:
 [Jason Miller](https://twitter.com/_developit/status/970425737512673280)
+
+## 30/12/2018
+
+### JS: addEventListener() once
+
+addEventListener() supports an `once` option.
+
+#### How to use
+```javascript
+target.addEventListener('click', () => console.log('once'), { once: true })
+```
+#### Learned from:
+[Surma](https://twitter.com/DasSurma/status/1078375282183151617)
