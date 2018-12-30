@@ -126,7 +126,7 @@ jasmine.clock().mockDate(today);
 const today = moment('2015-10-19').toDate();
 jasmine.clock().mockDate(today);
 ```
-#### Learmed from:
+#### Learned from:
 [jacwah](https://stackoverflow.com/a/33380312)
 
 ## 13/01/2018
