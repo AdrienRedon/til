@@ -331,3 +331,25 @@ target.addEventListener('click', () => console.log('once'), { once: true })
 ```
 #### Learned from:
 [Surma](https://twitter.com/DasSurma/status/1078375282183151617)
+
+## 24/02/2019
+
+### SVG: rotate shape fill-box
+
+To rotate a shape witout using the center of the SVG canvas as the origin of the rotation but its own center, you can add transform-box: fill-box to the shape you're rotating. 
+
+#### How to use
+```css
+.triangle {
+    animation-name: rotation;
+    animation-duration: 1s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes rotate {
+    from { transform: rotate(90deg); }
+    to { transform: rotate(0deg); }
+}
+```
+#### Learned from:
+[Cassie Evans](https://twitter.com/cassiecodes/status/1099343911632412677)
